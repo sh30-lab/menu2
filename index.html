@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoa'a Menu</title>
+    <style>
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4ed;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    
+        .navbar {
+            width: 100%;
+            background-color: #b9ef53; 
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            background-color: white;
+            color: #b9ef53;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+    
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 20px;
+            padding: 20px;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        
+        .category-card {
+            background-color: #b9ef53;
+            border-radius: 20px;
+            overflow: hidden;
+            text-decoration: none; 
+            transition: transform 0.2s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .category-card:active {
+            transform: scale(0.95); 
+        }
+
+        .image-container {
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+        }
+
+        .category-name {
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">Shoa'a</div>
+        <div style="font-size: 24px;">الطعم الدمشق الأصيل</div>
+    </div>
+    <div class="banner">
+
+  
+  <div class="overlay-text">
+
+  </div>
+</div>
+
+    <div class="menu-grid">
+        
+        <a href="a.html" class="category-card">
+            <div class="image-container">
+                <img src= "99.jpg">
+            </div>
+            <div class="category-name">العصائر</div>
+        </a>
+
+        <a href="b.html" class="category-card">
+            <div class="image-container">
+                <img src=11.jpg>
+            </div>
+            <div class="category-name">المقبلات</div>
+        </a>
+
+        <a href="c.html" class="category-card">
+            <div class="image-container">
+                <img src=55.jpg>
+            </div>
+            <div class="category-name">الإفطار</div>
+        </a>
+
+        <a href="d.html" class="category-card">
+            <div class="image-container">
+                <img src="77.jpg">
+            </div>
+            <div class="category-name">فطائر</div>
+        </a>
+
+        <a href="e.html" class="category-card">
+            <div class="image-container">
+               <img src="66.jpg" alt= "الغداء">
+            </div>
+            <div class="category-name">الغداء</div>
+        </a>
+
+        <a href="f.html" class="category-card">
+            <div class="image-container">
+                <img src=88.jpg>
+            </div>
+            <div class="category-name">الحلويات والميلك شيك</div>
+        </a>
+
+    </div>
+
+</body>
+</html>

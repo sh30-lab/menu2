@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة </title>
+    <style>
+        /* إعدادات الخلفية العامة */
+        body {
+            background-color: #79ad44; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* حاوية الشبكة (عمودين) */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            max-width: 450px;
+            width: 100%;
+        }
+
+        
+        .item-card {
+            background-color: rgba(255, 255, 255, 0.25); 
+            border-radius: 20px;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+        }
+
+        
+        .image-box {
+            background-color: white;
+            margin: 8px;
+            border-radius: 15px;
+            padding: 10px;
+            aspect-ratio: 1 / 1; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+    
+        .item-label {
+            padding: 12px 5px;
+            font-weight: 600;
+            color: #2d2d2d;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-grid">
+    
+        <div class="item-card">
+            <div class="image-box">
+                <img src="">
+            </div>
+            <div class="item-label">ممدودة بطحين</div>
+        </div>
+
+        
+        <div class="item-card">
+            <div class="image-box">
+                <img src="">
+            </div>
+            <div class="item-label">صفيحة</div>
+        </div>
+
+    
+        <div class="item-card">
+            <div class="image-box">
+                <img src="">
+            </div>
+            <div class="item-label">ممدودة</div>
+        </div>
+
+    
+     <div class="item-card">
+         <div class="image-box">
+                <img src="">
+             </div>
+            <div class="item-label">لحم بعجين</div>
+        </div>
+
+
+
+        <div class="item-card">
+            <div class="image-box">
+                <img src="">
+            </div>
+            <div class="item-label">ممدودة بطحين</div>
+        </div>
+
+        <div class="item-card">
+            <div class="image-box">
+                <img src="">
+             </div>
+            <div class="item-label">ممدودة بطحين</div>
+        </div>
+
+        <div class="item-card">
+            <div class="image-box">
+                <img src="">
+             </div>
+            <div class="item-label">ممدودة بطحين</div>
+        </div>
+ 
+        <div class="item-card">
+            <div class="image-box">
+                <img src="">
+             </div>
+            <div class="item-label">ممدودة بطحين</div>
+        </div>
+ 
+    </div>
+ 
+
+
+
+
+
+</body>
+</html>

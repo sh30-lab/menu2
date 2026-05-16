@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A&M Foodhouse - Welcome</title>
+    <title>Welcome</title>
     
     <style>
-        /* إيقاف الهوامش الافتراضية للمتصفح */
+        /* إيقاف الهوامش الافتراضية */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* تنسيق الخلفية بالكامل باستخدام صورتك */
+        /* تنسيق الخلفية المحدث ليناسب حجم الشاشة تماماً */
         body {
-            background-image: url('Shoaa.jpeg'); /* صورتك الخاصة */
-            background-size: cover;             /* تخلي الصورة تغطي الشاشة بالكامل */
-            background-position: center;        /* توسيط الصورة */
-            background-repeat: no-repeat;       /* تمنع تكرار الصورة */
-            height: 100vh;                      /* تأخذ طول الشاشة بالكامل */
+            background-image: url('Shoaa.jpeg'); 
+            background-size: 100% 100%;       /* تجبر الصورة على الانضغاط لتناسب أبعاد الشاشة بالظبط */
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;                      /* طول الشاشة بالكامل */
+            width: 100vw;                       /* عرض الشاشة بالكامل */
             display: flex;
             justify-content: center;
             align-items: center;
             font-family: Arial, sans-serif;
+            overflow: hidden;                   /* تمنع ظهور شريط التمرير الجانبي */
         }
 
-        /* حاوية المحتوى الترحيبي */
         .welcome-container {
             text-align: center;
             display: flex;
@@ -37,30 +38,28 @@
             width: 100%;
         }
 
-        /* تنسيق زر NEXT بالأخضر مثل ما طلبتي */
+        /* تنسيق زر NEXT بالأخضر */
         .next-btn {
             display: inline-block;
-            padding: 14px 45px;
-            background-color: #2ed573; /* اللون الأخضر الحيوي */
-            color: white;             /* لون النص أبيض ليظهر بوضوح */
-            text-decoration: none;    /* إلغاء الخط اللي تحت الرابط */
-            font-size: 1.3rem;
+            padding: 12px 40px;
+            background-color: #2ed573; 
+            color: white;             
+            text-decoration: none;    
+            font-size: 1.2rem;
             font-weight: bold;
             letter-spacing: 1px;
-            border-radius: 12px;      /* زوايا منحنية تشبه اللي في الصورة */
-            box-shadow: 0 4px 15px rgba(46, 213, 115, 0.4); /* ظل خفيف يعطي فخامة للزر */
-            transition: all 0.3s ease; /* حركة ناعمة عند الضغط أو التمرير */
+            border-radius: 10px;      
+            box-shadow: 0 4px 15px rgba(46, 213, 115, 0.4); 
+            transition: all 0.3s ease; 
             
-            /* تحريك الزر ليتناسق مع تصميم صورتك (تقدرين تعدلين الرقم حسب مكان الزر بالصورة) */
+            /* مكان الزر في أسفل الشاشة */
             margin-top: auto; 
-            margin-bottom: 20%; 
+            margin-bottom: 25px; /* يرتفع مسافة بسيطة عن الحافة السفلية */
         }
 
-        /* تأثير جميل عند تمرير الماوس فوق الزر */
         .next-btn:hover {
-            background-color: #26af5f; /* درجة أغمق قليلاً عند التمرير */
-            transform: translateY(-2px); /* يرتفع الزر بشكل بسيط جداً */
-            box-shadow: 0 6px 20px rgba(38, 175, 95, 0.6);
+            background-color: #26af5f; 
+            transform: translateY(-2px); 
         }
     </style>
 </head>

@@ -1,48 +1,73 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Shoa'a</title>
+    <title>A&M Foodhouse - Welcome</title>
+    
     <style>
-        welcome-container {
-            background-image: linear-gradient(white), black, url('shaa.jpeg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh;
+        /* إيقاف الهوامش الافتراضية للمتصفح */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* تنسيق الخلفية بالكامل باستخدام صورتك */
+        body {
+            background-image: url('Shoaa.jpeg'); /* صورتك الخاصة */
+            background-size: cover;             /* تخلي الصورة تغطي الشاشة بالكامل */
+            background-position: center;        /* توسيط الصورة */
+            background-repeat: no-repeat;       /* تمنع تكرار الصورة */
+            height: 100vh;                      /* تأخذ طول الشاشة بالكامل */
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;
-            color: white;
-            font-family: sans-serif;
-        
-        }
-        next-btn {
-            display: inline-block;
-            padding: 12px 35px;
-            background-color: #ff4757;
-            color: white;
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-            border-radius: 25px;
-            margin-top: 20px;
+            font-family: Arial, sans-serif;
         }
 
+        /* حاوية المحتوى الترحيبي */
+        .welcome-container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        /* تنسيق زر NEXT بالأخضر مثل ما طلبتي */
+        .next-btn {
+            display: inline-block;
+            padding: 14px 45px;
+            background-color: #2ed573; /* اللون الأخضر الحيوي */
+            color: white;             /* لون النص أبيض ليظهر بوضوح */
+            text-decoration: none;    /* إلغاء الخط اللي تحت الرابط */
+            font-size: 1.3rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border-radius: 12px;      /* زوايا منحنية تشبه اللي في الصورة */
+            box-shadow: 0 4px 15px rgba(46, 213, 115, 0.4); /* ظل خفيف يعطي فخامة للزر */
+            transition: all 0.3s ease; /* حركة ناعمة عند الضغط أو التمرير */
+            
+            /* تحريك الزر ليتناسق مع تصميم صورتك (تقدرين تعدلين الرقم حسب مكان الزر بالصورة) */
+            margin-top: auto; 
+            margin-bottom: 20%; 
+        }
+
+        /* تأثير جميل عند تمرير الماوس فوق الزر */
+        .next-btn:hover {
+            background-color: #26af5f; /* درجة أغمق قليلاً عند التمرير */
+            transform: translateY(-2px); /* يرتفع الزر بشكل بسيط جداً */
+            box-shadow: 0 6px 20px rgba(38, 175, 95, 0.6);
+        }
     </style>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
     <div class="welcome-container">
-        <div class="welcome-content">
-            <h1>أهلاً بكم في</h1>
-            
-            <a href="menu2.html" class="next-btn">Next</a>
-        </div>
+        <a href="first.html" class="next-btn">NEXT</a>
     </div>
 
 </body>
